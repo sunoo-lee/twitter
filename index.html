@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/navigator.css">
+	<link rel="stylesheet" href="css/aside.css">
+	<link rel="stylesheet" href="css/timeline.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<title>Twitter</title>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="header__left"></div>
+		<div class="header__wrapper">
+			<h1 class="header__start">
+				<span class="header__title">최신 트윗</span>
+			</h1>
+			<div class="header__end">
+				<button class="header__input--button">&#9881;</button>
+			</div>
+		</div>
+		<div class="header__right"></div>
+	</header>
+
+	<nav class="nav">
+		<ul class="nav__wrapper"> 
+			<div class="nav__align">
+				<div class="nav__banner">
+					<li>
+						<button class="nav__icon" id="nav__icon--home">&#9992;</button>
+					</li>
+					<li>
+						<button class="nav__icon">&#9751; <span class="nav__menu">홈</span></button>
+					</li>
+					<li>
+						<button class="nav__icon">&#9885; <span class="nav__menu">탐색하기</span></button>
+					</li>
+					<li>
+						<button class="nav__icon">&#10063; <span class="nav__menu">알림</span></button>
+					</li>
+					<li>
+						<button class="nav__icon">&#9993; <span class="nav__menu">쪽지</span></button>
+				</li>
+				<li>
+					<button class="nav__icon">&#9745; <span class="nav__menu">북마크</span></button>
+				</li>
+				<li>
+					<button class="nav__icon">&#9861; <span class="nav__menu">리스트</span></button>
+				</li>
+				<li>
+					<button class="nav__icon">&#9784; <span class="nav__menu">프로필</span></button>
+				</li>
+				<li>
+					<button class="nav__icon">&#9863; <span class="nav__menu">더 보기</span></button>
+				</li>
+				<button class="nav__twit">트윗하기</button>
+			</div>
+			<div class="nav__profile">
+				<div class="nav__pic"></div>
+				<div class="nav__text">
+					<h3 class="nav__name">서누</h3>
+					<p class="nav__id">@sunoooo</p>
+				</div>  
+				<div class="nav__about">&#8943;</div>
+			</div>
+		</div>
+		</ul>
+	</nav>
+	
+	<aside class="aside">
+		<div class="aside__wrapper">
+			<div class="aside__start">
+				<form class="aside__form" onsubmit="return false;" >
+					<button class="aside__input--button">&#9740;</button>
+					<input class="aside__input--search" type="text" placeholder="트위터 검색">
+				</form>
+			</div>
+			<div class="aside__center">
+				<div class="aside__trend">
+					<div class="trend__wrapper">
+						<h1 class="trend__header">
+							<span class="trend__title">나를 위한 트렌드</span>
+							<button class="trend__title--button">&#9881;</button>
+						</h1>
+						<div class="trend__item">
+							<div class="trend__info">
+								<div class="trend__text" >
+									<p class="trend__text--location">대한민국에서 트렌드 중</p>
+									<p class="trend__text--keyword">오레오</p>
+									<p class="trend__text--count">421 트윗</p>
+								</div>
+								<button class="trend__button">&#8943;</button>
+							</div>
+						</div>
+						<div class="trend__item">
+							<div class="trend__info">
+								<div class="trend__text" >
+									<p class="trend__text--location">대한민국에서 트렌드 중</p>
+									<p class="trend__text--keyword">크림</p>
+									<p class="trend__text--count">1,023 트윗</p>
+								</div>
+								<button class="trend__button">&#8943;</button>
+							</div>
+						</div>
+						<div class="trend__item">
+							<div class="trend__info">
+								<div class="trend__text" >
+									<p class="trend__text--location">대한민국에서 트렌드 중</p>
+									<p class="trend__text--keyword">언릴</p>
+									<p class="trend__text--count">1,444 트윗</p>
+								</div>
+								<button class="trend__button">&#8943;</button>
+							</div>
+						</div>
+						<div class="trend__item">
+							<div class="trend__info">
+								<div class="trend__text" >
+									<p class="trend__text--location">대한민국에서 트렌드 중</p>
+									<p class="trend__text--keyword">세재보</p>
+									<p class="trend__text--count">2,639 트윗</p>
+								</div>
+								<button class="trend__button">&#8943;</button>
+							</div>
+						</div>
+						<button class="trend__more">더 보기</button>
+					</div>
+				</div>
+				<div class="aside__recommend">
+					<div class="recommend__wrapper">
+						<h1 class="recommend__header">
+							<span class="recommend__title">팔로우 추천</span>
+						</h1>
+						<div class="recommend__item">
+							<div class="recommend__info">
+								<!-- <img class="recommend__profile" src="image/profile.png"> -->
+								<div class="recommend__profile--1"></div>
+								<div class="recommend__text">
+									<h3 class="recommend__name">싸이버 서누</h3>
+									<p class="recommend__id">@Sunoo_Spinner</p>
+								</div>
+								<button class="recommend__follow--button">팔로우</button>
+							</div>
+						</div>
+						<div class="recommend__item">
+							<div class="recommend__info">
+								<!-- <img class="recommend__profile" src="image/profile.png"> -->
+								<div class="recommend__profile"></div>
+								<div class="recommend__text">
+									<h3 class="recommend__name">벽안도적단</h3>
+									<p class="recommend__id">@BlueEyedBand</p>
+								</div>
+								<button class="recommend__follow--button">팔로우</button>
+							</div>
+						</div>
+						<button class="recommend__more">더 보기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+<section class="main">
+	<div class="main__left"></div>
+	<div class="main__wrapper">
+
+		<div class="main__new">
+			<div class="new__start">
+				<div class="main__new--pic"></div>
+				<input class="main__new--text" type="textbox" placeholder="무슨 일이 일어나고 있나요?">
+			</div>
+			
+			<div class="new__end">
+				<div class="main__new--menu">
+					<button class="main__new--icon">&#9861;</button>
+					<button class="main__new--icon">&#9861;</button>
+					<button class="main__new--icon">&#9861;</button>
+					<button class="main__new--icon">&#9861;</button>
+					<button class="main__new--icon">&#9861;</button>
+					<button class="main__new--icon">&#9861;</button>
+				</div>
+				<button class="main__new--button">트윗하기</button>
+			</div>
+		</div>
+
+		<div class="timeline">
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">32분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">관엽식물 서누베리아를 탐라에 심어보세요</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">34분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">대체 무슨 트윗을 적어놔야 하는가</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+			
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">뭐로 채우지</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+			<div class="timeline__twit">
+				<div class="timeline__profile"></div>
+				<div class="timeline__info">
+					<div class="timeline__text">
+						<h3 class="timeline__name">서누</h3>
+						<p class="timeline__id">@sunoooo</p>
+						<p class="timeline__dot">&#8231;</p>
+						<p class="timeline__time">35분</p>
+					</div>
+					<button class="timeline__more">&#8943;</button>
+				</div>
+				<p class="timeline__140">테스트 트윗</p>
+				<div class="timeline__menu">
+					<button class="timeline__menu--icon" >&#9729;</button>
+					<button class="timeline__menu--icon" >&#8633;</button>
+					<button class="timeline__menu--icon" >&#10084;</button>
+					<button class="timeline__menu--icon" >&#8613;</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<footer class="dm">
+	<div class="dm__wrpper">
+		<h1 class="dm__start">
+			<span class="dm__title">쪽지</span>
+		</h1>
+		<div class="dm__end">
+			<button class="dm__icon">&#9993;</button>
+			<button class="dm__icon">&#8613;</button>
+		</div>
+	</div>
+</footer>
+
+
+	</body>
+	</html>

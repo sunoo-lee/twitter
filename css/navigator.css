@@ -1,0 +1,217 @@
+.nav {
+  position: fixed;
+  min-width: 285px;
+  float: left;
+  width: calc(100% - 600px - 55% + 285px);
+  top: 0px;
+  z-index: 20;
+  min-height: 100vh;
+  border-right: rgb(131, 131, 131, 0.5) 1px solid;
+}
+.nav__wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #15202b;
+  list-style: none;
+}
+.nav__align {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  justify-content: space-between;
+  float: right;
+  padding: 0 12px;
+  width: 250px;
+  min-height: 100vh;
+  /* background-color: rgb(76, 80, 92); */
+}
+.nav__wrapper li {
+  display: flex;
+  height: 60px;
+  width: 250px;
+  padding: 0 0 0 0;
+  text-align: center;
+  border-radius: 50px;
+}
+.nav__menu {
+  box-sizing: border-box;
+  height: 34px;
+  margin: 0 0 0 8px;
+  padding: 5px 5px;
+  color: white;
+  font-size: 1.3rem;
+  align-self: center;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.nav__icon {
+  /* transition: all 0.5s; */
+  display: flex;
+  box-sizing: content-box;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  padding: 0 16px 0 12px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 2.2rem;
+  border-radius: 50px;
+}
+#nav__icon--home {
+  display: flex;
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 2.2rem;
+  border-radius: 50px;
+}
+.nav__icon:hover {
+  transition: all 0.3s;
+  background-color: rgb(44, 54, 64);
+}
+#nav__icon--home:hover {
+  transition: all 0.3s;
+  background-color: #1c3346;
+}
+.nav__twit {
+  width: 225px;
+  height: 51px;
+  padding: 0px;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: rgb(29, 155, 240);
+  border: none;
+  border-radius: 50px;
+}
+.nav__twit:hover {
+  transition: all 0.3s;
+  background-color: rgb(0, 128, 255);
+}
+
+.nav__profile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 12px 12px;
+}
+.nav__pic {
+  width: 40px;
+  height: 40px;
+  background-image: url(../image/profile.png);
+  background-size: 40px;
+  background-color: powderblue;
+  border-radius: 50px;
+}
+.nav__text {
+  margin-left: -25%;
+  align-self: center;
+  font-size: 1rem;
+  color: white;
+}
+.nav__name {
+  font-weight: bold;
+}
+.nav__id {
+  color: #8899a7;
+  padding-top: 4px;
+}
+.nav__about {
+  align-self: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: -8px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.nav__profile:hover {
+  transition: all 0.3s;
+  background-color: rgb(44, 54, 64);
+}
+
+@media screen and (max-width: 1281px) {
+  .nav {
+    min-width: 3%;
+  }
+  .nav__wrapper {
+    width: 0px;
+  }
+  .nav__wrapper li {
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    width: 64px;
+    padding: 0px;
+  }
+  .nav__menu,
+  .nav__text,
+  .nav__about {
+    display: none;
+  }
+  .nav__profile {
+    width: 64px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    padding: 12px;
+    height: 100px;
+  }
+  .nav__icon {
+    padding: 0px;
+    width: 64px;
+    height: 50px;
+  }
+  .nav__twit {
+    width: 50px;
+    height: 50px;
+    margin: 15px 0px;
+    color: transparent;
+  }
+  .nav__align {
+    box-sizing: content-box;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px;
+    float: right;
+    padding: 0 12px;
+    width: 64px;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .nav {
+    width: calc(10%);
+  }
+  .nav__align {
+    padding: 0 12px;
+  }
+}
+@media screen and (max-width: 1004px) {
+  .nav {
+    min-width: 88px;
+    width: calc(25% - 88px);
+  }
+  .nav__align {
+    padding: 0 12px;
+  }
+}
